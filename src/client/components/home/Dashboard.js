@@ -13,9 +13,9 @@ export default class Dashboard extends Component{
             <Poster />
             <div className="container">
               <Introboard />
-              <br/>
+              <hr/>
               <Newsboard />
-              <br/>
+              <hr/>
             </div>
           </div>
         );
