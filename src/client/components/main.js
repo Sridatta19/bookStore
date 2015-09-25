@@ -1,24 +1,26 @@
+"use strict";
 
-import React from 'react';
-import Header from './pages/Header';
-import Footer from './pages/Footer';
-import Dashboard from './pages/Dashboard';
-import Hero from './pages/Hero';
+import React,{Component} from 'react';
+import Header from './home/Header';
+import Footer from './home/Footer';
+import Dashboard from './home/Dashboard';
+import DocumentTitle from 'react-document-title';
 
 require('../styles/main.less');
 require('../styles/normalize.less');
 require('../styles/fonts.css');
 
-export default class Main extends React.Component{
+export default class Main extends Component{
 
     render() {
         return (
+          <DocumentTitle title='Books Awesome | Comics, Books Shoppe'>
           <div>
             <Header />
-            <Hero />
-            <Dashboard />
+            {this.props.children || <Dashboard />}
             <Footer />
           </div>
+          </DocumentTitle>
         );
     }
 }

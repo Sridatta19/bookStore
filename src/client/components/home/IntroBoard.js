@@ -1,7 +1,8 @@
+'use strict';
 
-import React from 'react';
+import React,{Component} from 'react';
 
-export default class Introboard extends React.Component{
+export default class Introboard extends Component{
 
     render() {
         return (

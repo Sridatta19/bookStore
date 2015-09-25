@@ -1,7 +1,8 @@
+'use strict';
 
-import React from 'react';
+import React,{Component} from 'react';
 
-export default class Newsboard extends React.Component{
+export default class Newsboard extends Component{
 
     render() {
         return (
@@ -13,7 +14,7 @@ export default class Newsboard extends React.Component{
     					<article className="news">
     						<header>
     							<h3>Smugglers Run by Greg Rucka</h3>
-    							<time datetime="2013-09-4">September 4, 2013</time>
+    							<time dateTime="2013-09-4">September 4, 2013</time>
     						</header>
 
     						<section className="excerpt">
@@ -28,7 +29,7 @@ export default class Newsboard extends React.Component{
     					<article className="event">
     						<header>
     							<h3>Shattered Empire</h3>
-    							<time datetime="2013-11-17">November 17, 2013</time>
+    							<time dateTime="2013-11-17">November 17, 2013</time>
     						</header>
 
     						<section className="excerpt">
