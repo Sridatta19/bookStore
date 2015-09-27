@@ -8,9 +8,9 @@ import * as BookActions from 'actions/BookActions';
 import _ from 'lodash';
 
 import DocumentTitle from 'react-document-title';
-import Poster from '../home/Poster';
-import CreateBookSidebar from './Books/CreateBookSidebar';
-import CreateBooks from './Books/CreateBooks';
+import Poster from 'client/components/home/Poster';
+import CreateBookSidebar from './Create/CreateBookSidebar';
+import CreateBooks from './Create/CreateBooks';
 import BookSidebar from './List/BookSidebar';
 import BooksList from './List/BooksList';
 
