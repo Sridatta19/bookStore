@@ -19,7 +19,21 @@ class CreateBooks extends Component {
   }
 
   _publisherChange = (evt) => {
-    this.setState({author: evt.target.value});
+    this.setState({publisher: evt.target.value});
+  }
+
+  _createBook = () => {
+    if (this.state.title !== 0) {
+      let book = {
+        title: this.state.title,
+        author: this.state.author,
+        publisher: this.state.publisher
+      }
+      this.setState({title: ''});
+      this.setState({author: ''});
+      this.setState({publisher: ''});
+      this.props.addBook(book);
+    }
   }
 
   render() {

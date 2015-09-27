@@ -5,11 +5,14 @@ import React,{Component} from 'react';
 export default class CreateBookSidebar extends Component {
 
   render() {
+    let {books} = this.props;
     return (
       <div>
         <h3>Recently Created</h3>
         <ul>
-          <li>The Shining</li>
+          {books.map(book =>
+            <li>{book.title}</li>
+          )}
         </ul>
       </div>
     );

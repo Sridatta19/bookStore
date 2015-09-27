@@ -1,6 +1,6 @@
 
 import Immutable from 'immutable';
-import {CREATE_BOOK} from '../common/ActionTypes';
+import {CREATE_BOOK, DELETE_BOOK, EDIT_BOOK} from '../common/ActionTypes';
 
 const initialState = [{
     title: 'The Shining',
@@ -18,6 +18,18 @@ export default function books(state = initialState, action) {
         author: action.book.author,
         publisher: action.book.publisher
       }, ...state];
+    case DELETE_BOOK:
+    return state.filter(book =>
+      book.id !== action.id
+    );
+    case EDIT_BOOK:
+      return state.map(book =>
+        book.id === action.id ?
+          Object.assign({}, book, { title: action.book.title,
+              author: action.book.author,
+              publisher: action.book.publisher }) :
+          book
+      );
     default:
       return state;
   }
