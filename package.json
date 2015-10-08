@@ -23,9 +23,10 @@
   "homepage": "https://github.com/Sridatta19/bookStore#readme",
   "dependencies": {
     "bootstrap": "^3.3.5",
+    "firebase": "^2.3.0",
     "immutable": "^3.7.5",
     "lodash": "^3.10.1",
-    "react": "^0.14.0-rc1",
+    "react": "^0.14.0",
     "react-bootstrap": "^0.25.100-react-pre.1",
     "react-document-title": "^2.0.1",
     "react-dom": "^0.14.0-rc1",

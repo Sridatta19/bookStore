@@ -1,5 +1,5 @@
 
-import Immutable from 'immutable';
+import {List, Map, Record} from 'immutable';
 import {CREATE_BOOK, DELETE_BOOK, EDIT_BOOK} from '../common/ActionTypes';
 
 const initialState = [{
