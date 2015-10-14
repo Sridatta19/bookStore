@@ -27,12 +27,12 @@
     "immutable": "^3.7.5",
     "lodash": "^3.10.1",
     "react": "^0.14.0",
-    "react-bootstrap": "^0.25.100-react-pre.1",
+    "react-bootstrap": "^0.27.1",
     "react-document-title": "^2.0.1",
-    "react-dom": "^0.14.0-rc1",
-    "react-redux": "^3.0.0",
-    "react-router": "^1.0.0-rc1",
-    "redux": "^3.0.0"
+    "react-dom": "^0.14.0",
+    "react-redux": "^3.1.0",
+    "react-router": "^1.0.0-rc3",
+    "redux": "^3.0.2"
   },
   "devDependencies": {
     "babel": "^5.8.23",
