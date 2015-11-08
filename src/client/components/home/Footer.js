@@ -15,7 +15,7 @@ export default class Footer extends Component{
       				</div>
 
       				<div id="credits">
-      					<p>Coded with enthusiasm by <a href="twitter.com/dattacrew19" target="_blank">Sridatta</a></p>
+      					<p>Coded with enthusiasm by <a href="https://twitter.com/dattacrew19" target="_blank">Sridatta</a></p>
       				</div>
 
       			</div>
