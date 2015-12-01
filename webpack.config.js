@@ -1,8 +1,9 @@
 var path = require('path');
 var webpack = require('webpack');
+var WriteFilePlugin = require('write-file-webpack-plugin');
 
 module.exports = {
-  devtool: 'eval',
+  devtool: 'inline-source-map',
   entry: [
     'webpack-dev-server/client?http://localhost:3000',
     'webpack/hot/only-dev-server',
@@ -15,7 +16,8 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.NoErrorsPlugin(),
+    new WriteFilePlugin()
   ],
   resolve: {
     extensions: ['', '.js', '.jsx'],
